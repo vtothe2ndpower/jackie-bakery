@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
 import Contact from './components/Contact';
+import NotFound from './components/NotFound';
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/contact" component={Contact} />
+          <Route render={() => <NotFound />} />
         </Switch>
       </div>
     );
