@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import Message from './Message';
 
 class About extends Component {
   render() {
     return (
       <div>
-        <h1>THIS IS THE ABOUT PAGE!</h1>
+        <Message>
+          <h1>THIS IS THE ABOUT PAGE!</h1>
+        </Message>
       </div>
     )
   }
